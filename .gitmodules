@@ -1,0 +1,3 @@
+[submodule "book-integromat/contents"]
+	path = book-integromat/contents
+	url = git@github.com:srz-zumix/book-integromat-contents.git
