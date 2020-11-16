@@ -5,3 +5,4 @@
 *.erb.orig
 tmp/*
 book-integromat-pdf/*
+book-integromat-epub/*

@@ -1,0 +1,37 @@
+on:
+  push:
+    paths:
+      - 'book-integromat/**'
+      - '.github/workflows/**'
+
+name: GitHub Actions - checks
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUBPAT }}
+      - name: Checkout submodules
+        env:
+          GIT_TOKEN: ${{ secrets.GITHUBPAT }}
+        run: |
+          sed -i "s|git@github.com:srz-zumix/book-integromat-contents.git|https://srz-zumix:${GIT_TOKEN}@github.com/srz-zumix/book-integromat-contents.git|g" .gitmodules
+          git submodule init
+          git submodule sync
+          git submodule update
+      - uses: srz-zumix/actions-book-image-check@master
+        with:
+          path: ./book-integromat/contents/images
+          formats: "JPEG"
+      # - name: Syntax
+      #   run: |
+      #     cd ./book-integromat/contents
+      #     find . -name "*.re" | xargs grep -one "@<href>{[^}]*#[^}]*}" && exit 1
+      - name: Notify slack (fail)
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: pullreminders/slack-action@v1.0.9
+        with:
+          args: '{\"channel\":\"CSYR0PEHW\",\"text\":\"<!here> fail checks https://github.com/srz-zumix/book-integromat/actions\"}'
