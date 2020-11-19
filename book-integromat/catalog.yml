@@ -2,7 +2,19 @@ PREDEF:
   - a00-preface.re
 
 CHAPS:
-  - b00-rpa.re
+  - Integromat の基礎知識:
+    - b00-what-is.re
+    - b01-features.re
+    - b02-pricing.re
+    - b03-hello-world.re
+  - Integromat の基礎機能:
+    - c00-scenario.re
+    - c10-template.re
+    - c11-devices.re
+  - 代表的な連携サービス:
+    - d00-services.re
+  - シナリオサンプル:
+    - e00-samples.re
 
 APPENDIX:
   - y00-appendix.re
