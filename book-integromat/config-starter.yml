@@ -44,7 +44,7 @@ starter:
   chapter_align: center
 
   ## 章 (Chapter) タイトルを1行にする（章番号とタイトルとの間で改行しない）
-  chapter_oneline: true
+  chapter_oneline: false
 
   ## 節 (Section) ごとに改ページするか
   ## （ただし各章の最初の節は改ページしない）
