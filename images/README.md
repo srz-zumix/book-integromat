@@ -23,3 +23,5 @@
 * danger   : #eb5768
 * light    : #f8f8f8
 * dark     : #333333
+* tool     : #ac94eb
+* router   : #a1d36f
