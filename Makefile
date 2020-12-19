@@ -4,6 +4,9 @@ help: ## show help
 build: ## build local
 	docker run -it --rm -v "$(PWD)/book-integromat":/work -w /work kauplan/review2.5 rake preproc all
 
+clean:
+	docker run -it --rm -v "$(PWD)/book-integromat":/work -w /work kauplan/review2.5 rake clean
+
 # https://github.com/marketplace/actions/interact-with-google-drive
 # 0. cp skicka/env-sample.sh skicka/env.sh
 # 1. set your clientId/Auth in skicka/env.sh (GOOGLE_CLIENT_ID/GOOGLE_CLIENT_SECRET)
