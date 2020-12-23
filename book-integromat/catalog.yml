@@ -3,36 +3,9 @@ PREDEF:
 
 CHAPS:
   - b-basic.re
-  # - Integromat の基礎知識:
-  #   - b00-what-is.re
-  #   - b01-features.re
-  #   - b02-pricing.re
-  #   - b03-hello-world.re
   - c-features.re
-  # - Integromat の機能説明:
-  #   - c00-scenarios.re
-  #   - c01-trigers.re
-  #   - c02-actions.re
-  #   - c03-builtin.re
-  #   - c04-functions.re
-  #   - c05-filters.re
-  #   - c06-error-handling.re
-  #   - c07-data-stores.re
-  #   - c08-live-exec-and-logs.re
-  #   - c10-export.re
-  #   - c20-templates.re
-  #   - c30-devices.re
   - d-services.re
-  # - 代表的な連携サービス:
-  #   - d00-services.re
-  #   - d01-google.re
-  #   - d02-microsoft.re
-  #   - d03-sns-and-chat.re
-  #   - d04-fileshare.re
-  #   - d05-kanban.re
-  - e-samples.re
-  # - シナリオサンプル:
-  #   - e00-samples.re
+#   - e-samples.re
 
 APPENDIX:
   - y00-appendix.re
