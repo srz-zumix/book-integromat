@@ -4,6 +4,9 @@ help: ## show help
 build: ## build local
 	docker run -it --rm -v "$(PWD)/book-integromat":/work -w /work kauplan/review2.5 rake preproc all
 
+ebook: ## build ebook local
+	docker run -it --rm -e "config=config-e.yml" -v "$(PWD)/book-integromat":/work -w /work kauplan/review2.5 rake preproc all
+
 clean:
 	docker run -it --rm -v "$(PWD)/book-integromat":/work -w /work kauplan/review2.5 rake clean
 
