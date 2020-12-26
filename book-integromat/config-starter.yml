@@ -61,10 +61,12 @@ starter:
 
   ## 項 (Subsection) タイトルの装飾
   ## （none: なし、symbol: 先頭にクローバー）
-  subsection_decoration: none
+  subsection_decoration: symbol
 
   ## プログラムやターミナルのキャプションを小さくするか？
-  caption_small: true
+  caption_small: false
+  caption_xsmall: false
+  caption_xxsmall: true
 
   ## キャプションの見映えをよくするか？
   caption_pretty: true

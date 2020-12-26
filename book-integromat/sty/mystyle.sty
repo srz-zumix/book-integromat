@@ -6,3 +6,24 @@
 %%%   starterが自動生成する「starter.sty」とは別ファイルにしている）
 %%%
 
+%%% スタートアイコン
+\renewcommand{\starter@subsection@symbol}{\raise0.1em\hbox{$\bigcirc\hspace{-.825em}\rhd$}}%
+
+%%% さらに小さいキャプションに対応
+\renewcommand{\starter@caption@text}[1]{{%
+  %\medskip{\small\noindent #1}\vspace*{-1.3zw}%    % original
+  \noindent%                   % キャプションをインデントしない
+  \ifx\starter@caption@small\empty\else%
+    \small%                    % キャプションの文字を小さくする
+  \fi%
+  \ifx\starter@caption@xsmall\empty\else%
+    \footnotesize%             % キャプションの文字を小さくする
+  \fi%
+  \ifx\starter@caption@xxsmall\empty\else%
+    \scriptsize%               % キャプションの文字を小さくする
+  \fi%
+  \ifx\starter@caption@pretty\empty\else%
+    \starter@caption@font\starter@caption@prefix% ゴシック体に変更、接頭辞をつける
+  \fi%
+  #1%                          % キャプションを表示
+}}

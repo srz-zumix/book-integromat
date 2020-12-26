@@ -16,6 +16,7 @@ module ReVIEW
   Compiler.definline :hearts            ## ハートマーク
   Compiler.definline :TeX               ## TeX のロゴマーク
   Compiler.definline :LaTeX             ## LaTeX のロゴマーク
+  Compiler.definline :Chi1              ## X1 マーク
 
   ## ブロック命令「//textleft{ ... //}」等を宣言
   ## （ここでは第2引数が「0」なので、引数なしのブロック命令になる。
@@ -65,6 +66,11 @@ module ReVIEW
     ## LaTeXのロゴマーク
     def inline_LaTeX(str)
       '\LaTeX{}'
+    end
+
+    ## Χ マーク
+    def inline_Chi1(str)
+      '\raisebox{0.2em}[1ex][1ex]{$\chi^1$}'
     end
 
     ## 左寄せ
@@ -142,7 +148,12 @@ module ReVIEW
 
     ## LaTeXのロゴマーク
     def inline_LaTeX(str)
-      'LaTeX'
+      'LaTex'
+    end
+
+    ## X マーク
+    def inline_Chi1(str)
+      '&#935;'
     end
 
     ## 左寄せ
@@ -193,6 +204,11 @@ module ReVIEW
     ## LaTeXのロゴマーク
     def inline_LaTeX(str)
       'LaTeX'
+    end
+
+    ## X マーク
+    def inline_Chi1(str)
+        'Χ'
     end
 
     ## ハートマーク
