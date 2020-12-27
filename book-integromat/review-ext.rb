@@ -17,6 +17,7 @@ module ReVIEW
   Compiler.definline :TeX               ## TeX のロゴマーク
   Compiler.definline :LaTeX             ## LaTeX のロゴマーク
   Compiler.definline :Chi1              ## X1 マーク
+  Compiler.definline :Start             ## スタート マーク
 
   ## ブロック命令「//textleft{ ... //}」等を宣言
   ## （ここでは第2引数が「0」なので、引数なしのブロック命令になる。
@@ -71,6 +72,11 @@ module ReVIEW
     ## Χ マーク
     def inline_Chi1(str)
       '\raisebox{0.2em}[1ex][1ex]{$\chi^1$}'
+    end
+
+    ## スタート マーク
+    def inline_Start(str)
+        '\raisebox{0.1em}[1ex][1ex]{$\bigcirc\hspace{-.825em}\rhd$}'
     end
 
     ## 左寄せ
@@ -156,6 +162,11 @@ module ReVIEW
       '&#935;'
     end
 
+    ## スタート マーク
+    def inline_Start(str)
+      '▶'
+    end
+
     ## 左寄せ
     def textleft(lines)
       puts '<div style="text-align:left">'
@@ -209,6 +220,11 @@ module ReVIEW
     ## X マーク
     def inline_Chi1(str)
         'Χ'
+    end
+
+    ## スタート マーク
+    def inline_Start(str)
+      '▶'
     end
 
     ## ハートマーク
