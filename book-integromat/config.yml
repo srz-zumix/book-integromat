@@ -17,6 +17,9 @@ review_version: 2.0
 # inherit: ["A.yml", "B.yml"]
 inherit: ["config-base.yml", "config-starter.yml"]
 
+# ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
+bookname: book-integromat
+
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
 # 読みの指定はaut:の例を参照。
