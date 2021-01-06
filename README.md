@@ -5,3 +5,8 @@
 [![GitHub Actions](https://github.com/srz-zumix/book-integromat/workflows/GitHub%20Actions/badge.svg?branch=main)](https://github.com/srz-zumix/book-integromat/actions?query=workflow%3A%22GitHub+Actions%22)
 
 ## 詳解 Integromat iPaaS 完全入門
+
+iPaaS の 1 つである Integromat の紹介・解説本。
+https://www.integromat.com/
+iPaaS を使った自動化（RPA）をするために必要な基礎知識と、Integromat の機能を詳細解説しているので
+より高度なシナリオを簡単に作れるようになります。
