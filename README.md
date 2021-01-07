@@ -10,3 +10,9 @@ iPaaS の 1 つである Integromat の紹介・解説本。
 https://www.integromat.com/
 iPaaS を使った自動化（RPA）をするために必要な基礎知識と、Integromat の機能を詳細解説しているので
 より高度なシナリオを簡単に作れるようになります。
+
+## Releases
+
+* ![技術書典10](https://img.shields.io/badge/%E6%8A%80%E8%A1%93%E6%9B%B8%E5%85%B810-Fin-green) 2020/12/26
+  * [技術書典マーケット](https://techbookfest.org/product/5328534149005312?productVariantID=6553683770736640)
+  * [Booth](https://srz-zumix.booth.pm/items/2656584)
