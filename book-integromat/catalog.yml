@@ -1,5 +1,5 @@
 PREDEF:
-  - a00-preface.re
+  - a-preface.re
 
 CHAPS:
   - b-basic.re
