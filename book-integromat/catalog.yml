@@ -7,8 +7,8 @@ CHAPS:
   - d-services.re
 #   - e-samples.re
 
-APPENDIX:
-  - y00-appendix.re
+# APPENDIX:
+#   - y00-appendix.re
 
 POSTDEF:
   - z00-postface.re
