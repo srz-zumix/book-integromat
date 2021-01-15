@@ -1,0 +1,3 @@
+# review-retrovert で変換したときに上書きする設定
+retrovert:
+  chapterlink: null
